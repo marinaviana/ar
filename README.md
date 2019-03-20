@@ -14,9 +14,9 @@ Android Emulator
 Dúvidas você pode ver no Tutorial: 
  <a href=“https://medium.com/@marina.s.viana/preparando-o-ambiente-para-appium-e663f04af8f2“>Preparando o ambiente para Appium</a>
 
-#Run
+# Run
 
-##Linha de comando
+## Linha de comando
 
 1- Utilizando o teminal execute o comando 
 
