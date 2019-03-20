@@ -1,0 +1,46 @@
+plugins {
+    id 'java'
+}
+
+group 'com.exemplo'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+configurations {
+    cucumberRuntime {
+        extendsFrom testRuntime
+    }
+}
+
+task runFeatures() {
+    dependsOn assemble, compileTestJava
+
+    doLast {
+        javaexec {
+
+
+            main = "cucumber.api.cli.Main"
+            classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
+            args = [
+                    '--plugin','io.qameta.allure.cucumberjvm.AllureCucumberJvm',
+                    '--monochrome', '--strict',
+                    '--glue', 'stepDefinition',
+                    'src/main/resources/features/'
+            ]
+        }
+    }
+}
+
+dependencies {
+    compile group: 'junit', name: 'junit', version: '4.12'
+    compile "info.cukes:cucumber-java:1.2.5"
+    compile "io.cucumber:cucumber-jvm:3.0.2"
+    compile "io.appium:java-client:6.1.0"
+    compile 'io.qameta.allure:allure-cucumber-jvm:2.8.1'
+}
