@@ -54,3 +54,5 @@ bin/
 # Log file
 *.log
 
+.DS_Store
+
