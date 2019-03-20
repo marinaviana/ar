@@ -11,8 +11,7 @@ Node
 
 Android Emulator
 
-Dúvidas você pode ver no Tutorial: 
- <a href=“https://medium.com/@marina.s.viana/preparando-o-ambiente-para-appium-e663f04af8f2“>Preparando o ambiente para Appium</a>
+Dúvidas você pode ver no Tutorial: [Preparando o ambiente para Appium](https://medium.com/@marina.s.viana/preparando-o-ambiente-para-appium-e663f04af8f2)
 
 # Run
 
