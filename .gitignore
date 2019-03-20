@@ -68,6 +68,9 @@ bin/
 # Compiled class file
 *.class
 
+#arquivo local
+ar.iml
+
 # Log file
 *.log
 
