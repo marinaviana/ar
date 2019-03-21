@@ -23,11 +23,11 @@ Dúvidas de como preparar o seu ambiente você pode ver no Tutorial: [Preparando
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-4- Node JS 11.1.0 para instalar via linha de comando cole no seu terminal: 
+4- **Node JS** para instalar via linha de comando cole no seu terminal: 
 
 brew install npm
 
-5- **Appium Server 1.9.1** para instalar via linha de comando cole no seu terminal: 
+5- **Appium Server** para instalar via linha de comando cole no seu terminal: 
 
 brew install -g appium
 
